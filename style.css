@@ -1,0 +1,67 @@
+html{
+    font-family: 'Space Grotesk', sans-serif;
+}
+body{
+    background-color:rgb(17, 17, 17);
+    margin:8rem;
+}
+
+form{
+    width:30rem;
+    padding:1rem;
+    margin:3rem auto;
+    background-color:white;
+    border-radius:5px;
+}
+
+label{
+    margin-bottom:0.5rem;
+    display:block;
+}
+
+input,
+textarea,
+select {
+    width: 100%;
+    display:block;
+    margin-bottom: 1rem;
+    box-sizing:border-box;
+    font:inherit;
+    border: 1px solid rgb(104, 103, 103);
+    padding:0.25rem;
+    color:rgb(37, 37, 37);
+}
+textarea{
+    resize:none;
+}
+
+input:focus,
+textarea:focus{
+    background-color:rgb(197, 174, 197);
+    border-color:rgb(38, 214, 67);
+    color:rgb(172, 39, 172);
+
+}
+
+button{
+    display: block;
+    font:inherit;
+background-color:rgb(224, 126, 224);
+color:white;
+border-radius:5px;
+border:1px solid rgb(95, 26, 95);
+padding:0.5rem 1.5rem;
+cursor:pointer;
+}
+
+button:hover{
+    background-color:rgb(206, 83, 206);
+    border-color:plum;
+    }
+.radio-container-style{
+    display:flex;
+}
+.radio-container-style input{
+    width:auto;
+    margin-right:0.8rem;
+}

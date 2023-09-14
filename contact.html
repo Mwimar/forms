@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="contact.css" />
+    <title>contact us</title>
+  </head>
+  <body>
+    <header>
+      <h1>Contact US</h1>
+    </header>
+    <main>
+      <form action="/" method="GET">
+        <section id="personal-details">
+          <h2>How can we help you?</h2>
+          <ul id="user-details">
+            <li class="input-container">
+              <label for="yourname">Your Name</label>
+              <input
+                type="text"
+                name="your-name"
+                id="yourname"
+                max-length="10"
+                required
+              />
+            </li>
+
+            <li class="input-container">
+              <label for="yourmail">Your E-Mail Address</label>
+              <input
+                type="email"
+                name="your-email"
+                id="yourmail"
+                maxlength="10"
+                required
+              />
+            </li>
+
+            <li class="input-container">
+              <label for="cellnumber">Your Phone Number</label>
+              <input
+                type="tel"
+                name="cell-number"
+                id="cellnumber"
+                required
+                minlength="10"
+              />
+            </li>
+
+            <li class="input-container">
+              <label for="yourmessage">Your Message</label>
+              <textarea
+                name="your-message"
+                id="yourmessage"
+                rows="4"
+                maxlength="100"
+              ></textarea>
+            </li>
+
+            <li class="input-container">
+              <label for="">How did you know us?</label>
+              <select name="know-us-by" id="knowusby">
+                <option value="websearch">Web Search</option>
+                <option value="newspaper">Newspaper</option>
+                <option value="twitter">Twitter</option>
+              </select>
+            </li>
+          </ul>
+        </section>
+        <section id="reply-options"></section>
+        <h2>How should we contact you?</h2>
+        <ul id="reply-user">
+          <li>
+            <input
+              type="radio"
+              name="how-we-reply"
+              id="sendmail"
+              value="sendmemail"
+              required
+            />
+            <label for="sendmail">Send me an e-mail</label>
+          </li>
+
+          <li>
+            <input
+              type="radio"
+              name="how-we-reply"
+              id="callme"
+              value="callme"
+              required
+            />
+            <label for="callme">Call me</label>
+          </li>
+
+          <li>
+            <input
+              type="radio"
+              name="how-we-reply"
+              id="dontreply"
+              value="don't reply"
+              required
+            />
+            <label for="dontreply">Don't Reply</label>
+          </li>
+          <li>
+            <input type="checkbox" id="agreeterms" value="agree" required />
+            <label for="agreeterms">Accept Terms</label>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <button type="post">Send</button>
+            <button type="reset">Clear</button>
+          </li>
+        </ul>
+      </form>
+    </main>
+  </body>
+</html>
